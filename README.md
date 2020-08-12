@@ -45,5 +45,9 @@ yarn run lint
 git remote add origin https://github.com/
 git push -u origin master
 
+<<<<<<< HEAD
 
 // 修改test 分支
+=======
+// 测试修改dev 分支
+>>>>>>> dev
