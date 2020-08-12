@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="format-detection" content="Email=no" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="https://f.taikang.com/static/assets/css/reset.css">
+  <!-- <script src="https://planbook.taikang.com/static/js/adapt.js"></script> -->
+  <script src='https://f.taikang.com/static/assets/js/sdk/isales.sdk.min.0.1.7.js'></script>
+  <script src="https://f.taikang.com/static/assets/js/jweixin-1.6.0.js"></script>
+  <script src="https://f.taikang.com/static/assets/js/interop.sdk.min.js"></script>
+
+  <%=process.env.VUE_APP_ENV !=="production" ? `<script src="https://f.taikang.com/static/assets/js/talkingData/td-h5-hybird-sdk.js?type=tsalesh5&envType=test"></script>` : 
+  `<script src="https://f.taikang.com/static/assets/js/talkingData/td-h5-hybird-sdk.js?type=tsalesh5&envType=pro"></script>`%>
+
+  <!-- <link rel="icon" href="<%= BASE_URL %>favicon.ico"> -->
+  <%=process.env.VUE_APP_ENV !=='production' ? '<script src="//cdn.bootcss.com/vConsole/3.3.3/vconsole.min.js"></script>' : ''%>
+  <!-- <script src="//cdn.bootcss.com/vConsole/3.3.3/vconsole.min.js"></script> -->
+  <!-- <script>
+       var vconsole = new VConsole()
+    </script> -->
+  <title>vue project template</title>
+</head>
+
+<body>
+  <%=process.env.VUE_APP_ENV !=='production' ? '<script>var vconsole = new VConsole()</script>' : ''%>
+  <noscript>
+    <strong>We're sorry but template doesn't work properly without JavaScript enabled. Please enable it to
+      continue.</strong>
+  </noscript>
+  <div id="app"></div>
+  <!-- built files will be auto injected -->
+</body>
+
+</html>
