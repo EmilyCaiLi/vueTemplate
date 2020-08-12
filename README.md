@@ -35,11 +35,11 @@ yarn run lint
 2) .env.production
 
 ### git常用命令
-1)git init
-2)git add README.md
-3)git commit -m 'first commmit'
-4)git remote add origin https://github.com/EmilyCaiLi/vueTemplate.git
-5)git push -u origin master
+1) git init
+2) git add README.md
+3) git commit -m 'first commmit'
+4) git remote add origin https://github.com/EmilyCaiLi/vueTemplate.git
+5) git push -u origin master
 
 
 git remote add origin https://github.com/
